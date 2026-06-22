@@ -1,0 +1,11 @@
+node_modules
+.next
+out
+.env*.local
+tsconfig.tsbuildinfo
+.vercel
+.DS_Store
+
+*.zip
+PART*.txt
+*.b64.part-*
