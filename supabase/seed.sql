@@ -1,0 +1,5 @@
+-- Production seed intentionally contains no sample business records.
+-- Create real companies, users, memberships, VAT registrations, branches,
+-- permissions, opening balances, and operational master data through the
+-- application UI or controlled migration scripts after Supabase Auth users
+-- are created for the production tenant.
