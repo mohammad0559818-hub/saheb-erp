@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lia Cosmetics — Final Designer Handoff</title>
+<style>
+:root{
+  --ink:#181313; --muted:#766b67; --line:#eadfd9; --paper:#fff;
+  --ivory:#fffaf6; --rose:#c98f89; --rose-deep:#9d6862; --champ:#c4a06a;
+  --blue:#9fc9d7; --aqua:#9ed6d4; --sage:#bac8b5; --shadow:0 24px 70px rgba(52,31,25,.11);
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(180deg,#fffefd 0,#fff9f5 55%,#fdfbf9 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Arial,sans-serif}
+.wrap{width:min(1240px,calc(100% - 34px));margin:auto}
+.top{padding:11px 0;text-align:center;background:#1b1514;color:#fff;font-size:12px;letter-spacing:.06em}
+.hero{padding:32px 0 20px}.heroBox{border:1px solid var(--line);border-radius:42px;overflow:hidden;box-shadow:var(--shadow);background:
+radial-gradient(circle at 80% 15%,rgba(255,255,255,.95),transparent 24%),
+linear-gradient(135deg,#f5e5de,#fffaf6 46%,#f1e8e2)}
+.heroGrid{display:grid;grid-template-columns:1.08fr .92fr;gap:34px;align-items:center;min-height:620px;padding:58px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:9px 14px;border-radius:999px;border:1px solid #eaded8;background:#fff;color:#835f59;font-size:12px;font-weight:700}
+.eyebrow i{width:8px;height:8px;background:var(--rose);border-radius:50%}
+h1{font-size:clamp(44px,6vw,78px);line-height:.98;letter-spacing:-.05em;margin:18px 0 20px}
+.hero p{color:#675d58;font-size:17px;line-height:1.95;max-width:720px;margin:0}
+.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{padding:9px 12px;border-radius:999px;background:rgba(255,255,255,.78);border:1px solid rgba(232,220,214,.95);font-size:12px;color:#665853}
+.brandBoard{height:500px;position:relative}.wordmark{position:absolute;inset:22px 20px auto 20px;background:rgba(255,255,255,.82);backdrop-filter:blur(10px);border:1px solid #fff;border-radius:30px;padding:26px;text-align:center;box-shadow:0 18px 50px rgba(52,31,25,.09)}
+.wordmark b{font-family:Georgia,"Times New Roman",serif;font-size:48px;color:var(--rose-deep);font-weight:500}.wordmark span{display:block;font-size:10px;letter-spacing:.38em;color:#a67b74;margin-top:5px}
+.stage{position:absolute;inset:150px 0 0}.pod{position:absolute;border-radius:30px;background:rgba(255,255,255,.92);border:1px solid #fff;box-shadow:0 24px 48px rgba(65,42,35,.13);display:grid;place-items:center}
+.p1{width:235px;height:300px;right:125px;top:0}.p2{width:165px;height:210px;right:0;bottom:14px}.p3{width:165px;height:210px;left:0;top:40px}.p4{width:160px;height:200px;left:70px;bottom:0}
+.bottle{position:relative;filter:drop-shadow(0 16px 14px rgba(68,44,36,.18))}
+.dropper{width:92px;height:165px;border-radius:25px;background:linear-gradient(#f2d6d0,#d5a19a)}.dropper:before{content:"";position:absolute;width:56px;height:48px;right:18px;top:-44px;background:#c49380;border-radius:15px}.dropper:after{content:"Lia\A HYDRA GLOW";white-space:pre;position:absolute;right:8px;left:8px;top:58px;padding:14px 3px;background:#fff9f6;border-radius:10px;text-align:center;font-size:10px;font-weight:800;color:#8f635d;line-height:1.5}
+.tube{width:95px;height:175px;border-radius:18px 18px 30px 30px;background:linear-gradient(#fff,#edf3f5);border:1px solid #e1e8eb}.tube:before{content:"";position:absolute;bottom:-14px;right:13px;width:69px;height:26px;border-radius:8px;background:#d9e7ed}.tube:after{content:"Lia\A BARRIER CALM";white-space:pre;position:absolute;right:10px;left:10px;top:55px;text-align:center;color:#587382;font-size:9px;font-weight:800;line-height:1.5}
+.mist{width:82px;height:170px;border-radius:25px;background:linear-gradient(#e8f6f7,#afd8db)}.mist:before{content:"";position:absolute;width:50px;height:42px;right:16px;top:-37px;border-radius:12px;background:#effbfb}.mist:after{content:"Lia\A CLOUD MIST";white-space:pre;position:absolute;right:8px;left:8px;top:68px;background:rgba(255,255,255,.86);padding:12px 2px;border-radius:9px;text-align:center;color:#5b8183;font-size:9px;font-weight:800;line-height:1.5}
+.jar{width:120px;height:100px;border-radius:28px;background:linear-gradient(#f5ebe6,#dfbfb6);margin-top:40px}.jar:before{content:"";position:absolute;width:126px;height:39px;right:-3px;top:-26px;border-radius:15px;background:#faf6f3}.jar:after{content:"Lia\A DAILY BALANCE";white-space:pre;position:absolute;right:11px;left:11px;top:28px;background:#fffaf7;padding:10px 2px;border-radius:9px;text-align:center;color:#936a64;font-size:9px;font-weight:800;line-height:1.4}
+section{padding:48px 0}.head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:24px}.head h2{margin:0 0 7px;font-size:clamp(30px,4vw,48px);letter-spacing:-.035em}.head p{margin:0;color:var(--muted);line-height:1.8;max-width:760px}
+.system{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}.panel{background:#fff;border:1px solid var(--line);border-radius:30px;padding:26px;box-shadow:0 12px 34px rgba(55,34,28,.06)}.panel h3{font-size:24px;margin:0 0 15px}.palette{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.sw{height:110px;border-radius:20px;padding:11px;display:flex;align-items:flex-end;font-size:10px;font-weight:800}.sw:nth-child(1){background:#fffaf6;border:1px solid #eee2db}.sw:nth-child(2){background:#c98f89;color:#fff}.sw:nth-child(3){background:#9fc9d7}.sw:nth-child(4){background:#9ed6d4}.sw:nth-child(5){background:#bac8b5}
+.rules{display:grid;gap:10px}.rule{padding:13px 14px;border-radius:18px;background:#faf6f3;border:1px solid #f0e6e1}.rule b{display:block;margin-bottom:4px}.rule small{color:var(--muted);line-height:1.5}
+.skus{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.sku{background:#fff;border:1px solid var(--line);border-radius:30px;overflow:hidden;box-shadow:0 12px 34px rgba(55,34,28,.06)}.skuTop{height:360px;display:grid;place-items:center;position:relative}.skuTop.rose{background:linear-gradient(145deg,#fff8f5,#efd9d3)}.skuTop.blue{background:linear-gradient(145deg,#fbfdfe,#e3eef3)}.skuTop.aqua{background:linear-gradient(145deg,#f7fcfc,#dff1f1)}.skuTop.sage{background:linear-gradient(145deg,#fbfcf8,#e8eee3)}
+.skuTop .bottle{transform:scale(1.35)}.num{position:absolute;right:18px;top:18px;width:38px;height:38px;border-radius:50%;background:#fff;display:grid;place-items:center;font-weight:800;font-size:12px}
+.skuInfo{padding:22px}.skuInfo h3{margin:0 0 5px;font-size:26px}.en{font-size:12px;letter-spacing:.18em;color:#a06f68;font-weight:800}.skuInfo p{color:var(--muted);line-height:1.75;margin:12px 0}.specs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.spec{padding:10px;background:#faf6f3;border-radius:13px}.spec b{display:block;font-size:11px;margin-bottom:3px}.spec small{color:#7b706b;font-size:10px}
+.handoff{background:#1d1716;color:#fff;border-radius:34px;padding:34px;display:grid;grid-template-columns:1fr 1fr;gap:20px}.handoff h2{font-size:36px;margin:0 0 10px}.handoff p{color:#e8dad5;line-height:1.8}.check{display:grid;grid-template-columns:1fr 1fr;gap:9px}.check div{padding:12px 13px;border-radius:16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.09);font-size:12px}
+.copy{padding:28px 0 40px;text-align:center;color:#887c76;font-size:12px}
+@media(max-width:900px){.heroGrid,.system,.skus,.handoff{grid-template-columns:1fr}.brandBoard{height:470px}.palette{grid-template-columns:repeat(2,1fr)}}@media(max-width:620px){.heroGrid{padding:28px}.p1{right:50%;transform:translateX(50%)}.p2{right:0}.p3{left:0}.p4{display:none}.specs,.check{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="top">FINAL DESIGN DIRECTION • READY FOR DESIGNER / FACTORY</div>
+<header class="hero"><div class="wrap"><div class="heroBox"><div class="heroGrid">
+<div>
+<span class="eyebrow"><i></i>LIA COSMETICS — FINAL HANDOFF</span>
+<h1>هوية نهائية أنيقة<br>لخط العناية بالبشرة</h1>
+<p>الأسلوب النهائي: <b>Quiet Luxury + Clean Clinical Feminine</b>. نبي المنتج يبان فاخر وموثوق، بدون زحمة رسومات، وبدون تقليد أي براند معروف. كل SKU له لون مساعد مختلف، لكن المجموعة كلها تبدو كعائلة واحدة.</p>
+<div class="chips"><span class="chip">Minimal</span><span class="chip">Premium</span><span class="chip">Saudi Market</span><span class="chip">Private Label Friendly</span><span class="chip">No copied packaging</span></div>
+</div>
+<div class="brandBoard"><div class="wordmark"><b>Lia Cosmetics</b><span>SKIN • BEAUTY • CARE</span></div><div class="stage">
+<div class="pod p1"><div class="bottle dropper"></div></div>
+<div class="pod p2"><div class="bottle tube"></div></div>
+<div class="pod p3"><div class="bottle mist"></div></div>
+<div class="pod p4"><div class="bottle jar"></div></div>
+</div></div>
+</div></div></div></header>
+
+<section><div class="wrap"><div class="head"><div><h2>النظام البصري</h2><p>هذه هي القاعدة التي يمشي عليها المصمم في العبوات والكرتون والموقع والسوشال.</p></div></div>
+<div class="system">
+<div class="panel"><h3>Color System</h3><div class="palette">
+<div class="sw">Warm Ivory<br>#FFFAF6</div><div class="sw">Dusty Rose<br>#C98F89</div><div class="sw">Powder Blue<br>#9FC9D7</div><div class="sw">Hydra Aqua<br>#9ED6D4</div><div class="sw">Soft Sage<br>#BAC8B5</div>
+</div></div>
+<div class="panel"><h3>Design Rules</h3><div class="rules">
+<div class="rule"><b>Logo</b><small>Lia أكبر عنصر بصري، وCosmetics أصغر تحته. بدون زخارف كثيرة.</small></div>
+<div class="rule"><b>Typography</b><small>اسم Lia Serif أنيق. باقي المعلومات Sans Serif نظيف وسهل القراءة.</small></div>
+<div class="rule"><b>Finish</b><small>Matte / soft-touch. وإذا الميزانية تسمح: hot foil ذهبي خفيف فقط على كلمة Lia.</small></div>
+<div class="rule"><b>Front Label</b><small>الواجهة نظيفة: Logo + Product Name + 3 benefits كحد أقصى + الحجم.</small></div>
+<div class="rule"><b>Back Label</b><small>INCI, Directions, Warnings, Manufacturer, Country of Origin, Batch, Expiry, Barcode, Arabic/English.</small></div>
+</div></div>
+</div></div></section>
+
+<section><div class="wrap"><div class="head"><div><h2>المنتجات الأربعة — النسخة النهائية</h2><p>الأسماء أدناه مقترحة كأسماء نهائية قابلة للتسجيل والتطوير. المصمم يقدر يبني عليها مباشرة.</p></div></div>
+<div class="skus">
+
+<article class="sku"><div class="skuTop rose"><div class="num">01</div><div class="bottle dropper"></div></div><div class="skuInfo">
+<div class="en">LIA COSMETICS</div><h3>Hydra Glow Serum</h3>
+<p>سيروم ترطيب وإشراقة. العبوة: زجاج فروستد وردي هادئ + قطارة بلون شامبين/روز. الإحساس فاخر وليس طفولي.</p>
+<div class="specs"><div class="spec"><b>SIZE</b><small>30 ml</small></div><div class="spec"><b>PACK</b><small>Frosted glass dropper</small></div><div class="spec"><b>ACCENT</b><small>Dusty Rose</small></div></div>
+</div></article>
+
+<article class="sku"><div class="skuTop blue"><div class="num">02</div><div class="bottle tube"></div></div><div class="skuInfo">
+<div class="en">LIA COSMETICS</div><h3>Barrier Calm Moisturizer</h3>
+<p>مرطب للبشرة الحساسة والجافة. أنبوب أبيض مطفي مع خط أزرق هادئ. طابع Dermo نظيف لكن بهوية Lia الخاصة، بدون نسخ La Roche-Posay.</p>
+<div class="specs"><div class="spec"><b>SIZE</b><small>50 ml</small></div><div class="spec"><b>PACK</b><small>Soft-touch tube</small></div><div class="spec"><b>ACCENT</b><small>Powder Blue</small></div></div>
+</div></article>
+
+<article class="sku"><div class="skuTop aqua"><div class="num">03</div><div class="bottle mist"></div></div><div class="skuInfo">
+<div class="en">LIA COSMETICS</div><h3>Cloud Hydra Mist</h3>
+<p>بخاخ مرطب ومنعش. عبوة أكوا شبه شفافة مع بخاخ أبيض، والليبل أبيض خفيف. يعطي إحساس ماء ونظافة وانتعاش.</p>
+<div class="specs"><div class="spec"><b>SIZE</b><small>100 ml</small></div><div class="spec"><b>PACK</b><small>Fine mist bottle</small></div><div class="spec"><b>ACCENT</b><small>Hydra Aqua</small></div></div>
+</div></article>
+
+<article class="sku"><div class="skuTop sage"><div class="num">04</div><div class="bottle jar"></div></div><div class="skuInfo">
+<div class="en">LIA COSMETICS</div><h3>Daily Balance Cream</h3>
+<p>كريم عناية يومية وترطيب وحماية للحاجز. عبوة Jar مطفية Ivory مع لمسة Sage بسيطة. يصلح كمنتج أساسي في الروتين اليومي.</p>
+<div class="specs"><div class="spec"><b>SIZE</b><small>50–60 ml</small></div><div class="spec"><b>PACK</b><small>Matte jar</small></div><div class="spec"><b>ACCENT</b><small>Soft Sage</small></div></div>
+</div></article>
+
+</div></div></section>
+
+<section><div class="wrap"><div class="handoff">
+<div><h2>تعليمات للمصمم</h2><p>نحتاج Mockups واقعية Front / Back / Box لكل منتج. استخدم نفس grid والمحاذاة في المنتجات الأربعة. لا تستخدم ورود، وجوه نساء، أو رسومات كثيرة. نريد العلامة تبدو Premium وClean من أول نظرة.</p></div>
+<div class="check">
+<div>✓ Front label لكل SKU</div><div>✓ Back label عربي/إنجليزي</div><div>✓ Outer box design</div><div>✓ 3D mockup أمامي وخلفي</div><div>✓ Print-ready AI/PDF</div><div>✓ CMYK + Pantone references</div><div>✓ Barcode safe area</div><div>✓ Dieline editable</div>
+</div>
+</div></div></section>
+<div class="copy">Lia Cosmetics • Final Designer Direction • September 2026</div>
+</body></html>
